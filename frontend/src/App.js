@@ -17,7 +17,6 @@ import AddLivro from './components/Livro/AddLivro';
 import ReadLivro from './components/Livro/ReadLivro';
 import UpdateLivro from './components/Livro/UpdateLivro';
 import Main from './components/Main';
-import MainB from './components/MainB';
 
 function App() {
   return (
@@ -25,7 +24,7 @@ function App() {
       <header className="App-header">
         <BrowserRouter>
           <Routes>
-            <Route path="/" element={<MainB />} />
+            <Route path="/" element={<Main />} />
             <Route path="/editora" element={<ListEditoras />} />
             <Route path="/addEditora" element={<AddEditora />} />
             <Route path="/readEditora/:id" element={<ReadEditora />} />
